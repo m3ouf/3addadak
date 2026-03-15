@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سياسة الخصوصية - عدادك</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&display=swap');
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Cairo', sans-serif;
+            background: #0a1628;
+            color: #e0e6f0;
+            line-height: 1.8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: #111d35;
+            border-radius: 16px;
+            padding: 40px;
+            border: 1px solid #1a2a4a;
+        }
+        h1 {
+            color: #00e5ff;
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+        .subtitle {
+            color: #8899aa;
+            font-size: 14px;
+            margin-bottom: 32px;
+        }
+        h2 {
+            color: #ff9800;
+            font-size: 20px;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #1a2a4a;
+            padding-bottom: 8px;
+        }
+        p, li {
+            color: #c0ccdd;
+            font-size: 16px;
+            margin-bottom: 8px;
+        }
+        ul {
+            padding-right: 24px;
+            margin-bottom: 16px;
+        }
+        .highlight {
+            background: #0d2a1a;
+            border: 1px solid #1b5e20;
+            border-radius: 8px;
+            padding: 16px;
+            margin: 16px 0;
+            color: #4caf50;
+            font-weight: 600;
+        }
+        .badge {
+            display: inline-block;
+            background: #00e5ff22;
+            color: #00e5ff;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin-left: 8px;
+        }
+        .footer {
+            text-align: center;
+            margin-top: 32px;
+            padding-top: 16px;
+            border-top: 1px solid #1a2a4a;
+            color: #556677;
+            font-size: 13px;
+        }
+        a { color: #00e5ff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>سياسة الخصوصية - عدادك (3addadak)</h1>
+        <p class="subtitle">آخر تحديث: ١٥ مارس ٢٠٢٦</p>
+
+        <div class="highlight">
+            كل بياناتك على موبايلك بس — مش بنرفع أي حاجة على أي سيرفر
+        </div>
+
+        <h2>مقدمة</h2>
+        <p>
+            تطبيق "عدادك" هو تطبيق لمتابعة صيانة السيارة. خصوصيتك مهمة عندنا جداً.
+            التطبيق مصمم من الأول إنه يشتغل بدون إنترنت وكل البيانات بتتخزن على جهازك بس.
+        </p>
+
+        <h2>البيانات اللي بنخزنها <span class="badge">محلية فقط</span></h2>
+        <p>التطبيق بيخزن البيانات دي على جهازك فقط:</p>
+        <ul>
+            <li><strong>بيانات السيارة:</strong> الماركة، الموديل، السنة، نوع الفتيس، الكيلومترات الحالية</li>
+            <li><strong>صور السيارة:</strong> بتتخزن كملفات محلية على الجهاز</li>
+            <li><strong>سجل الصيانة:</strong> تواريخ الصيانة، التكلفة، الملاحظات</li>
+            <li><strong>بيانات المسافات:</strong> المسافة المقطوعة (بالكيلومتر) من GPS</li>
+            <li><strong>الإعدادات:</strong> تفضيلات الإشعارات</li>
+        </ul>
+
+        <h2>الصلاحيات المطلوبة</h2>
+        <ul>
+            <li><strong>الكاميرا:</strong> لتصوير عداد الكيلومترات وقراءته تلقائياً — الصور بتتعالج على الجهاز ومش بتترفع</li>
+            <li><strong>الموقع (أمامي وخلفي):</strong> لحساب المسافة المقطوعة أثناء القيادة تلقائياً — بيانات الموقع مش بتتخزن، بس المسافة المحسوبة</li>
+            <li><strong>الإشعارات:</strong> لتنبيهك لما يحين موعد صيانة قطعة</li>
+        </ul>
+
+        <h2>الحاجات اللي مش بنعملها</h2>
+        <ul>
+            <li>مش بنجمع أي بيانات شخصية</li>
+            <li>مش بنرفع أي بيانات على سيرفرات</li>
+            <li>مش بنستخدم أي أدوات تتبع أو تحليلات (Analytics)</li>
+            <li>مش بنعرض إعلانات</li>
+            <li>مش بنشارك بياناتك مع أي طرف تالت</li>
+            <li>مش بنخزن بيانات موقعك — بس بنحسب المسافة</li>
+        </ul>
+
+        <h2>التعرف على النصوص (OCR)</h2>
+        <p>
+            التطبيق بيستخدم تقنية التعرف على النصوص لقراءة عداد الكيلومترات من الصور.
+            العملية دي بتتم بالكامل على جهازك باستخدام ML Kit — مفيش صور بتترفع على الإنترنت.
+        </p>
+
+        <h2>أمان البيانات</h2>
+        <p>
+            بياناتك محمية بأمان نظام التشغيل على جهازك (Android/iOS).
+            لو مسحت التطبيق، كل البيانات هتتمسح معاه.
+        </p>
+
+        <h2>كود مفتوح المصدر</h2>
+        <p>
+            التطبيق مفتوح المصدر وتقدر تراجع الكود بالكامل على
+            <a href="https://github.com/m3ouf/3addadak" target="_blank">GitHub</a>.
+        </p>
+
+        <h2>التواصل</h2>
+        <p>
+            لو عندك أي سؤال عن سياسة الخصوصية، تقدر تفتح issue على
+            <a href="https://github.com/m3ouf/3addadak/issues" target="_blank">GitHub Issues</a>.
+        </p>
+
+        <div class="footer">
+            عدادك (3addadak) — تطبيق مفتوح المصدر لمتابعة صيانة سيارتك
+        </div>
+    </div>
+</body>
+</html>
