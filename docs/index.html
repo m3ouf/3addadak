@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>سياسة الخصوصية — عدادك (3addadak)</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Segoe UI', Tahoma, sans-serif;
+      background: #0A1628;
+      color: #e0e0e0;
+      line-height: 1.8;
+      padding: 20px;
+    }
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      background: rgba(255,255,255,0.05);
+      border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 20px;
+      padding: 32px;
+    }
+    h1 { color: #00D4FF; font-size: 28px; margin-bottom: 4px; text-align: center; }
+    .update { color: rgba(255,255,255,0.4); font-size: 13px; text-align: center; margin-bottom: 24px; }
+    h2 { color: #FFFFFF; font-size: 18px; margin-top: 24px; margin-bottom: 8px; border-bottom: 1px solid rgba(255,255,255,0.1); padding-bottom: 6px; }
+    h3 { color: #00D4FF; font-size: 15px; margin-top: 16px; margin-bottom: 4px; }
+    p, li { color: rgba(255,255,255,0.7); font-size: 14px; margin-bottom: 6px; }
+    ul { padding-right: 20px; }
+    li { margin-bottom: 4px; }
+    .highlight { color: #00E676; font-weight: 600; }
+    .no { color: #FF6B35; }
+    a { color: #00D4FF; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .badge { display: inline-block; background: rgba(0,212,255,0.15); color: #00D4FF; padding: 2px 8px; border-radius: 6px; font-size: 11px; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>سياسة الخصوصية — عدادك</h1>
+    <p class="update">آخر تحديث: مارس ٢٠٢٦</p>
+
+    <h2>مقدمة</h2>
+    <p>تطبيق "عدادك" بيحترم خصوصيتك تماماً. التطبيق ده مصمم إنه يشتغل بدون ما يجمع أو يرفع أي بيانات شخصية.</p>
+
+    <h2>البيانات اللي بنخزنها</h2>
+    <p>التطبيق بيخزن البيانات دي <span class="highlight">على جهازك بس</span> (AsyncStorage):</p>
+    <ul>
+      <li><strong>بيانات العربية:</strong> الماركة، الموديل، سنة الصنع، قراية العداد</li>
+      <li><strong>سجل الصيانة:</strong> تواريخ الصيانة، التكاليف، الملاحظات</li>
+      <li><strong>إعدادات التنبيهات:</strong> مواعيد التنبيه لكل قطعة</li>
+      <li><strong>بيانات GPS:</strong> المسافات المتتبعة (لو فعّلت التتبع)</li>
+    </ul>
+
+    <h2>البيانات اللي <span class="no">مش</span> بنجمعها</h2>
+    <ul>
+      <li><strong>مفيش سيرفر:</strong> مفيش أي بيانات بتتبعت لأي سيرفر</li>
+      <li><strong>مفيش تحليلات:</strong> مفيش Google Analytics أو أي أداة تتبع</li>
+      <li><strong>مفيش إعلانات:</strong> مفيش أي SDK إعلانات</li>
+      <li><strong>مفيش تسجيل دخول:</strong> مش محتاج حساب أو إيميل</li>
+      <li><strong>مفيش مشاركة:</strong> مفيش أي بيانات بتتشارك مع أي طرف تالت</li>
+    </ul>
+
+    <h2>صلاحيات التطبيق</h2>
+
+    <h3>الموقع (اختياري)</h3>
+    <ul>
+      <li><strong>الغرض:</strong> حساب المسافة اللي بتمشيها بالعربية تلقائي</li>
+      <li><strong>متى:</strong> بس لما تفعّل التتبع بالـ GPS</li>
+      <li><strong>الفلترة:</strong> التطبيق بيتجاهل السرعات أقل من ١٥ كم/ساعة</li>
+      <li><strong>التخزين:</strong> بيانات المسافة بتتخزن على جهازك بس</li>
+      <li><strong>الخلفية:</strong> التتبع في الخلفية بيستخدم foreground service عشان يفضل شغال وأنت سايق</li>
+    </ul>
+
+    <h3>الإشعارات (اختياري)</h3>
+    <ul>
+      <li><strong>الغرض:</strong> تنبيهك لما قطعة تقرب من موعد الصيانة</li>
+      <li><strong>التحكم:</strong> تقدر تفعّل/تعطّل التنبيهات لكل قطعة لوحدها</li>
+    </ul>
+
+    <h3>الكاميرا (اختياري)</h3>
+    <ul>
+      <li><strong>الغرض:</strong> تصوير عداد العربية وقراية الرقم تلقائي (OCR)</li>
+      <li><strong>المعالجة:</strong> الصورة بتتعالج على جهازك باستخدام ML Kit — مش بتترفع في أي مكان</li>
+      <li><strong>التخزين:</strong> الصور مش بتتخزن — بتتمسح بعد القراية</li>
+    </ul>
+
+    <h2>أمان البيانات</h2>
+    <ul>
+      <li>كل البيانات مخزنة محلياً على جهازك باستخدام AsyncStorage</li>
+      <li>لو مسحت التطبيق، كل البيانات هتتمسح معاه</li>
+      <li>مفيش نسخة احتياطية على السحابة (حالياً)</li>
+    </ul>
+
+    <h2>حقوقك</h2>
+    <ul>
+      <li><strong>الحذف:</strong> تقدر تحذف أي عربية أو قطعة أو سجل صيانة في أي وقت</li>
+      <li><strong>التحكم:</strong> كل الصلاحيات اختيارية وتقدر تعطّلها</li>
+      <li><strong>الشفافية:</strong> كود التطبيق مفتوح المصدر على GitHub</li>
+    </ul>
+
+    <h2>التواصل</h2>
+    <p>لو عندك أي سؤال عن الخصوصية:</p>
+    <p>GitHub: <a href="https://github.com/m3ouf/3addadak">github.com/m3ouf/3addadak</a></p>
+
+    <h2>التغييرات</h2>
+    <p>لو حصل أي تغيير في سياسة الخصوصية، هننشرها هنا مع تاريخ التحديث.</p>
+  </div>
+</body>
+</html>
